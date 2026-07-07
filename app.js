@@ -88,8 +88,19 @@
 // console.log(document.title);
 // document.write("<h1>Hiiii</h1>");
 
-let heading = document.getElementById("heading");
+// let heading = document.getElementById("heading");
 
-heading.innerText = "iCET";
+// heading.innerText = "iCET";
 
-console.log(heading);
+// console.log(heading);
+
+let number = 0;
+function increaseCounter() {
+    heading.innerText = "iCET" + number++;
+    console.log("Clicked");
+}
+
+function decreaseCounter() {
+    heading.innerText = "iCET" + number--;
+    console.log("Clicked");
+}
