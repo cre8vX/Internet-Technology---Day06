@@ -94,13 +94,21 @@
 
 // console.log(heading);
 
-let number = 0;
-function increaseCounter() {
-    heading.innerText = "iCET" + (++number);
-    console.log("Clicked");
-}
+// let number = 0;
+// function increaseCounter() {
+//     heading.innerText = "iCET" + (++number);
+//     console.log("Clicked");
+// }
 
-function decreaseCounter() {
-    heading.innerText = "iCET" + (--number);
-    console.log("Clicked");
-}
+// function decreaseCounter() {
+//     heading.innerText = "iCET" + (--number);
+//     console.log("Clicked");
+// }
+
+function changeHeading() {
+    console.log("Hii");
+
+    let inputText = document.getElementById("inputText");
+    console.log(inputText.value);
+    document.getElementById("heading").innerText = inputText.value;
+}     
