@@ -96,11 +96,11 @@
 
 let number = 0;
 function increaseCounter() {
-    heading.innerText = "iCET" + number++;
+    heading.innerText = "iCET" + (++number);
     console.log("Clicked");
 }
 
 function decreaseCounter() {
-    heading.innerText = "iCET" + number--;
+    heading.innerText = "iCET" + (--number);
     console.log("Clicked");
 }
