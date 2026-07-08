@@ -105,10 +105,59 @@
 //     console.log("Clicked");
 // }
 
-function changeHeading() {
-    console.log("Hii");
+// function changeHeading() {
+//     console.log("Hii");
 
-    let inputText = document.getElementById("inputText");
-    console.log(inputText.value);
-    document.getElementById("heading").innerText = inputText.value;
-}     
+//     let inputText = document.getElementById("inputText");
+//     console.log(inputText.value);
+//     document.getElementById("heading").innerText = inputText.value;
+// }     
+
+//---------------------------------------------------------------------
+
+// function btnSumOnAction() {
+//     let input01 = document.getElementById("txtInput01").value;
+//     let input02 = document.getElementById("txtInput02").value;
+    
+//     let sum = parseInt(input01) + parseInt(input02);
+
+//     document.getElementById("heading").innerText = "SUM: " + sum;
+
+//     console.log(input01); 
+//     console.log(input02);
+//     console.log(sum);
+// }  
+
+//(MEKE HADALA THINNE SUM BUTTON EKATA WITHARAI, ANITH BUTTON EKATA OYA HADANNA.)
+
+//----------------------------------------------------------------------
+
+let customerList = [];
+
+function btnAddCustomerOnAction() {
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    // console.log(txtName);
+    // console.log(txtAddress);
+    // console.log(txtAge);
+    // console.log(txtEmail);
+    // console.log(txtSalary);
+
+    let customer = {
+        name: txtName,
+        Address: txtAddress,
+        age: txtAge,
+        email: txtEmail,
+        salary: txtSalary
+    }
+
+    // console.log(customer);
+
+    customerList.push(customer);
+
+    console.log(customerList);
+}
