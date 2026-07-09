@@ -158,6 +158,28 @@ function btnAddCustomerOnAction() {
     // console.log(customer);
 
     customerList.push(customer);
+    loadTable();
 
     console.log(customerList);
+}
+
+function loadTable() {
+    let tblCustomers = document.getElementById("tblCustomers");
+
+    let body = "";
+
+    for(let i = 0; i < customerList.length; i++){
+            body+=`<tr>
+            <td>${customerList[i].name}</td>
+            <td>${customerList[i].Address}</td>
+            <td>${customerList[i].age}</td>
+            <td>${customerList[i].email}</td>
+            <td>${customerList[i].salary}</td>
+        </tr>`;
+    }
+
+    tblCustomers.innerHTML = body; 
+        
+    
+    console.log(tblCustomers);
 }
